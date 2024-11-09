@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,80 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PhoneAgenda" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g7w-tp-xc4" userLabel="initialsContainer">
+                                <rect key="frame" x="152.66666666666666" y="107" width="88" height="88"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cmf-fF-fic" userLabel="initialsLabel">
+                                        <rect key="frame" x="26.333333333333343" y="27.333333333333339" width="35" height="33.666666666666657"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="CzI-7x-chK"/>
+                                    <constraint firstItem="Cmf-fF-fic" firstAttribute="centerY" secondItem="g7w-tp-xc4" secondAttribute="centerY" id="ayx-o1-qpu"/>
+                                    <constraint firstAttribute="height" constant="88" id="gnx-Ge-qhD"/>
+                                    <constraint firstItem="Cmf-fF-fic" firstAttribute="centerX" secondItem="g7w-tp-xc4" secondAttribute="centerX" id="mtS-44-eCk"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adalberto Pompolo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0e-to-f9p" userLabel="nameLabel">
+                                <rect key="frame" x="81" y="211" width="231" height="34"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1-770-736-8031" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TgV-6d-o6u" userLabel="phoneLabel">
+                                <rect key="frame" x="132.66666666666666" y="249" width="127.99999999999997" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="beto.nassu@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbu-GD-yxM" userLabel="emailLabel">
+                                <rect key="frame" x="108.00000000000001" y="286" width="177.33333333333337" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.3529411764705882" green="0.3529411764705882" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agile Engine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BDP-Rr-zFo" userLabel="companyNameLabel">
+                                <rect key="frame" x="149.66666666666666" y="311" width="94" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.3529411764705882" green="0.3529411764705882" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.086274509803921567" green="0.086274509803921567" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="B0e-to-f9p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Akv-9a-ETk"/>
+                            <constraint firstItem="TgV-6d-o6u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ido-5z-JPV"/>
+                            <constraint firstItem="BDP-Rr-zFo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pzs-Ha-GSm"/>
+                            <constraint firstItem="BDP-Rr-zFo" firstAttribute="top" secondItem="hbu-GD-yxM" secondAttribute="bottom" constant="4" id="V9b-wl-sdj"/>
+                            <constraint firstItem="hbu-GD-yxM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e6c-B1-Z8n"/>
+                            <constraint firstItem="hbu-GD-yxM" firstAttribute="top" secondItem="TgV-6d-o6u" secondAttribute="bottom" constant="16" id="kdR-ss-ewL"/>
+                            <constraint firstItem="g7w-tp-xc4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="mcM-dX-uFd"/>
+                            <constraint firstItem="TgV-6d-o6u" firstAttribute="top" secondItem="B0e-to-f9p" secondAttribute="bottom" constant="4" id="mtk-hP-JTn"/>
+                            <constraint firstItem="g7w-tp-xc4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pAK-HY-Tvl"/>
+                            <constraint firstItem="B0e-to-f9p" firstAttribute="top" secondItem="g7w-tp-xc4" secondAttribute="bottom" constant="16" id="uMM-wo-CXM"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="companyNameLabel" destination="BDP-Rr-zFo" id="f3H-Qq-wgn"/>
+                        <outlet property="emailLabel" destination="hbu-GD-yxM" id="peP-b6-hqV"/>
+                        <outlet property="initialsContainerView" destination="g7w-tp-xc4" id="O0s-ka-dQ8"/>
+                        <outlet property="initialsLabel" destination="Cmf-fF-fic" id="c5d-og-2Vu"/>
+                        <outlet property="nameLabel" destination="B0e-to-f9p" id="D6e-hb-xyX"/>
+                        <outlet property="phoneLabel" destination="TgV-6d-o6u" id="O7b-cq-56e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="138" y="4"/>
         </scene>
     </scenes>
 </document>
